@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{title}}
+{% endblock  %}
+{% block content %}
+    <h1>Home Page</h1>
+    {% for x in range(10)  %}
+        {% if x%2 == 1 %}
+            <p>{{x}}</p>
+        {% endif  %}
+    {% endfor  %}
+    {% for user in users  %}
+        <p>{{user}}</p>
+    {% endfor  %}
+
+{% endblock  %}
